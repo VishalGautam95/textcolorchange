@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="letters" onkeydown="myfunction()" style="padding: 50px; font-size: 50px;">
+    <p id="demo" style="font-size: 50px;">print here</p>
+    <p id="count" style="font-size: 50px;">count here</p>
+
+
+
+    <script>
+        function myfunction() {
+             x = document.getElementById("letters").value;
+             y = x.length;
+            document.getElementById("demo").innerHTML= x;
+            document.getElementById("count").innerHTML= y;
+
+            if (y < 20) {
+                document.getElementById("demo").style.color = "black"
+            }
+            if (y > 20) {
+                document.getElementById("demo").style.color = "green"
+            }
+             if (y > 40) {
+                document.getElementById("demo").style.color = "red"
+                
+            }
+            if (y > 100) {
+                document.getElementById("demo").style.color = "pink"
+
+            
+        }
+        }
+    </script>
+    
+</body>
+</html>
